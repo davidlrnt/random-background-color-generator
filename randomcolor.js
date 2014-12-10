@@ -26,4 +26,7 @@
 
         return this;
     };
+    $.fn.randomColour = function( options ){
+        this.randomColor(options);
+    }
 }( jQuery ));
