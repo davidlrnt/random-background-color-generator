@@ -1,0 +1,17 @@
+body {
+	background-color:rgb(192,192,192);
+}
+footer {
+	position:fixed;
+    bottom:0;
+    width: 400px;
+    height: 25px;
+    background-color: white;
+}
+#footer {
+	font-family: Verdana;
+	font-size: 12px;
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+}
