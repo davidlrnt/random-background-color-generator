@@ -16,13 +16,20 @@
             timing: 5000
         }, options );
 
-        base = this;
+        var base = this;
+
+        if(this.attr('data-randcol')){
+            clearInterval(this.attr('data-randcol'));
+            this.attr('data-randcol',-1);
+        }
 
         randomInit(base);
 
-        setInterval(function(){
+        timerid = setInterval(function(){
             randomize(base, settings);
         }, settings.timing);
+
+        this.attr('data-randcol',timerid);
 
         return this;
     };
